@@ -22,7 +22,7 @@ config :sample_app, SampleAppWeb.Endpoint,
   http: [ip: {127, 0, 0, 1}, port: 4000],
   check_origin: false,
   code_reloader: true,
-  debug_errors: true,
+  debug_errors: false,
   secret_key_base: "4EhVzJhgjj2TBdMj7QfZgMd6beBkzo+OoHGiIQ6JoZo+DuhE9d9PD3NtkdXyw1az",
   watchers: [
     esbuild: {Esbuild, :install_and_run, [:sample_app, ~w(--sourcemap=inline --watch)]},
